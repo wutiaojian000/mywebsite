@@ -1,0 +1,36 @@
+<html>
+<head>
+<meta charset="utf-8">
+<title>LA指令集学习</title>
+</head>
+<body>
+
+<h1>指令格式</h1>
+<img src="resources/LA01.png"  > <!-- width="752" height="236" -->
+
+<img src="resources/LA02.png" >
+<p>sltui rd, rj, si12 符号数有符号扩展到32位再用无符号比较</p>
+<p>slti rd, rj, si12 符号数有符号扩展到32位再用有符号比较</p>
+
+<img src="resources/LA03.png" >
+
+<img src="resources/LA04.png" >
+<p>逻辑右移补0，算术右移补符号位</p>
+<p>逻辑左移补0</p>
+
+<img src="resources/LA05.png" >
+<p>指令的立即数低位填0，存入寄存器中</p>
+<p>与ori搭配的意义在于先用lu12i装载高20位，再用ori装载低12位</p>
+
+ <img src="resources/LA06.png" >
+ 
+ <img src="resources/LA07.png" >
+
+ <img src="resources/LA08.png" >
+<p>分支延迟槽 (Branch delay slot)，简单地说就是位于分支指令后面的一条指令，不管分支发生与否其总是被执行，而且位于分支延迟槽中的指令先于分支指令提交 (commit)。
+</p>
+
+
+
+</body>
+</html>
